@@ -1,10 +1,10 @@
 Key Requirements
-✅ Chaining operations (e.g., calc.add(5).subtract(2).multiply(3).value() → 9)
-✅ Supports addition, subtraction, multiplication, division
-✅ Maintains immutability (creates a new instance to avoid modifying the existing state)
-✅ Handles edge cases (e.g., division by zero)
-✅ Follows design patterns
-✅ System design best practices
+- ✅ Chaining operations (e.g., calc.add(5).subtract(2).multiply(3).value() → 9)
+- ✅ Supports addition, subtraction, multiplication, division
+- ✅ Maintains immutability (creates a new instance to avoid modifying the existing state)
+- ✅ Handles edge cases (e.g., division by zero)
+- ✅ Follows design patterns
+- ✅ System design best practices
 
 ```
 class ChainCalculator {
