@@ -9,7 +9,7 @@ Key Requirements
 ```javascript
 class ChainCalculator {
   constructor(value = 0) {
-    this._value = value; // Renamed the property to avoid conflict
+    this._value = value; 
   }
 
   add(number) {
