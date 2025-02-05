@@ -6,7 +6,7 @@ Key Requirements
 - ✅ Follows design patterns
 - ✅ System design best practices
 
-```
+```javascript
 class ChainCalculator {
   constructor(value = 0) {
     this._value = value; // Renamed the property to avoid conflict
