@@ -9,35 +9,33 @@ Key Requirements
 ```
 class ChainCalculator {
   constructor(value = 0) {
-    this.value = value;
+    this._value = value; // Renamed the property to avoid conflict
   }
 
   add(number) {
-    return new ChainCalculator(this.value + number);
+    return new ChainCalculator(this._value + number);
   }
 
   subtract(number) {
-    return new ChainCalculator(this.value - number);
+    return new ChainCalculator(this._value - number);
   }
 
   multiply(number) {
-    return new ChainCalculator(this.value * number);
+    return new ChainCalculator(this._value * number);
   }
 
   divide(number) {
     if (number === 0) {
       throw new Error("Division by zero is not allowed.");
     }
-    return new ChainCalculator(this.value / number);
+    return new ChainCalculator(this._value / number);
   }
 
   value() {
-    return this.value;
+    return this._value; // Return the renamed property
   }
 }
 
-// Example Usage
 const calc = new ChainCalculator();
 console.log(calc.add(5).subtract(2).multiply(3).value()); // 9
-
 ```
