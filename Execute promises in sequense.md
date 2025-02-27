@@ -39,7 +39,8 @@ executeInSequence([task1, task2, task3])
 ```
 
 
-async function executeInSequence(tasks) {
+```javascript
+ async function executeInSequence(tasks) {
     for (const task of tasks) {
         await task();
     }
