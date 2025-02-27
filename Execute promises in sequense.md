@@ -36,4 +36,16 @@ const task3 = () => new Promise(resolve => setTimeout(() => {
 
 executeInSequence([task1, task2, task3])
     .then(() => console.log("All tasks completed"));
+```
+
+
+async function executeInSequence(tasks) {
+    for (const task of tasks) {
+        await task();
+    }
+}
+
+// Same tasks array
+executeInSequence([task1, task2, task3])
+    .then(() => console.log("All tasks completed"));
 
