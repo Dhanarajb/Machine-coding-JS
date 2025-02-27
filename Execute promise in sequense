@@ -12,3 +12,4 @@ const task3 = () => new Promise(resolve => setTimeout(() => { console.log("Task 
 
 executeInSequence([task1, task2, task3])
     .then(() => console.log("All tasks completed"));
+```
